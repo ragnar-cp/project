@@ -1,0 +1,139 @@
+
+.movie-thumbnail {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .movie-thumbnail:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie-thumbnail .popup-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .movie-thumbnail:hover .popup-info {
+    transform: translateY(0);
+  }
+ /* Typing effect container */
+.typing-effect {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white; /* Cursor effect */
+    animation: typing 4s steps(40, end), blink-caret 0.5s step-end 4s forwards; /* Hides after typing */
+  }
+  
+  /* Typing effect keyframes */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%; /* Full text width */
+    }
+  }
+  
+  /* Cursor blinking keyframes */
+  @keyframes blink-caret {
+    0%, 50% {
+      border-color: white;
+    }
+    100% {
+      border-color: transparent; /* Hides the cursor */
+    }
+  }
+  
+  
+  
+ .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, height 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9); /* Darker background when scrolled */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  height: 60px; /* Slightly reduced height */
+}
+#booking {
+    background-image: url(viking.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 50px; /* Adjust top padding for the content */
+    padding-bottom: 50px; /* Adjust bottom padding for the content */
+  }
+  
+  #booking .container {
+    background-color: rgba(0, 0, 0, 0.5); /* Add dark overlay for better text contrast */
+    padding: 30px; /* Adjust padding for spacing */
+    border-radius: 8px; /* Optional: to round the corners of the form */
+  }
+  
+  #booking h2,
+  #booking .form-label {
+    color: #fff; /* Change text color for better contrast */
+  }
+  
+  #booking .form-control,
+  #booking .form-select {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for form fields */
+  }
+ 
+/* Keyframe for popup animation */
+@keyframes popupAnimation {
+    0% {
+      transform: scale(0.95);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Default state for input fields */
+  .animated-input {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for focus effect */
+  }
+  
+  /* Pop-up effect when clicked */
+  .animated-input.popup {
+    transform: scale(1.05); /* Keep the input slightly enlarged */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a slight shadow for emphasis */
+  }
+  
+  /* Reset effect on losing focus */
+  .animated-input {
+    transform: scale(1); /* Reset to default size */
+    box-shadow: none; /* Remove shadow */
+  }
+  /* Initial state for animated elements */
+.assemble-animation {
+    opacity: 0; /* Hidden initially */
+    transform: translateY(20px); /* Slide slightly down */
+    transition: all 0.5s ease-out;
+  }
+  
+  /* Final state when animation is triggered */
+  .assemble-animation.show {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Back to original position */
+  }
