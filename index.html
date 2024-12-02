@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Ticket Booking</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MovieTickets</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#movies">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#booking">Book Tickets</a>
+              </li>
+            </ul>
+            <!-- Search Form -->
+            <form class="d-flex ms-lg-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search movies..." aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+
+  <div class="bg-dark text-white text-center py-5">
+    <h1 class="typing-effect">Welcome to MovieTickets</h1>
+    <p>Your favorite movies, one click away!</p>
+  </div>
+  
+  
+
+  <!-- Movies Section -->
+  <div class="container my-5" id="movies">
+    <h2 class="text-center mb-4">Now Showing</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card movie-thumbnail">
+          <img src="https://wallpaperaccess.com/full/957244.jpg" class="card-img-top" alt="Movie 1">
+          <div class="card-body">
+            <h5 class="card-title">Blade Runner</h5>
+            <p class="card-text">Young Blade Runner K's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard, who's been missing for thirty years.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card movie-thumbnail">
+          <img src="https://wallpapers.com/images/high/kgf-4k-chapter-2-poster-jraa73rvcy52zh1f.webp" class="card-img-top" alt="Movie 2">
+          <div class="card-body">
+            <h5 class="card-title">KGF 2</h5>
+            <p class="card-text">In the blood-soaked Kolar Gold Fields, Rocky's name strikes fear into his foes, while the government sees him as a threat to law and order. Rocky must battle threats from all sides for unchallenged supremacy.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card movie-thumbnail">
+          <img src="https://wallpaperaccess.com/full/1899976.jpg" class="card-img-top" alt="Movie 3">
+          <div class="card-body">
+            <h5 class="card-title">Avengers: Endgame</h5>
+            <p class="card-text">After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="bg-light py-5" id="booking">
+    <div class="container">
+      <h2 class="text-center mb-4 assemble-animation">Book Your Tickets</h2>
+      <form>
+        <div class="mb-3 assemble-animation">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" class="form-control animated-input" id="name" placeholder="Enter your name">
+        </div>
+        <div class="mb-3 assemble-animation">
+          <label for="movie" class="form-label">Select Movie</label>
+          <select class="form-select animated-input" id="movie">
+            <option selected>Choose...</option>
+            <option value="1">Blade Runner</option>
+            <option value="2">KGF 2</option>
+            <option value="3">Avengers: Endgame</option>
+          </select>
+        </div>
+        <div class="mb-3 assemble-animation">
+          <label for="seats" class="form-label">Number of Tickets</label>
+          <input type="number" class="form-control animated-input" id="seats" placeholder="Enter number of tickets">
+        </div>
+        <button type="submit" class="btn btn-primary assemble-animation">Book Now</button>
+      </form>
+    </div>
+  </div>
+  
+  
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 MovieTickets. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
