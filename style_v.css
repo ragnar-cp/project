@@ -1,0 +1,47 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-image: url('../img/resort.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.hero-section {
+    background-image: url('https://img.freepik.com/free-photo/golden-sun-tranquil-waters-edge-generative-ai_188544-40608.jpg?semt=ais_hybrid'); /* Replace with your actual image path */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    min-height: 400px; /* Set a minimum height for the hero section */
+    display: flex; /* Flexbox to center content */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a subtle shadow to text for better readability */
+}
+.booking-section {
+    background-image: url('https://img.freepik.com/premium-photo/coast-sea-azov_375001-589.jpg?semt=ais_hybrid'); /* Replace with your actual image path */
+    background-size: cover; /* Ensure the image covers the section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    min-height: 100vh; /* Make it full height */
+    display: flex; /* Use Flexbox for content alignment */
+    align-items: center; /* Vertically align content */
+    justify-content: center; /* Center content horizontally */
+    color: white; /* Text color for better visibility */
+}
+
+form {
+    max-width: 600px; /* Limit the form's width */
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Blur the background behind the form */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Space inside the form */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+form label {
+    color: #000; /* Set label color to black */
+    font-weight: bold; /* Optional: make the labels bold for better visibility */
+}
+
+
