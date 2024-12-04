@@ -38,7 +38,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 110vh; /* Full viewport height */
-    background: url("pictures/WhatsApp\ Image\ 2024-12-02\ at\ 17.12.07_73a98dca.jpg") no-repeat center center/cover; /* Hero background image */
+    background: url(https://cdn.jsdelivr.net/gh/ragnar-cp/project@main/pizza.jpg) no-repeat center center/cover; /* Hero background image */
     color: #fff;
     text-align: center;
     position: relative;
